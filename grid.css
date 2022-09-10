@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[class^="box-"] {
+    background-color: skyblue;
+  /* To place the letter at the center */
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+.box-1{
+    border: solid 1px black;
+    /*
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+    grid-column: 1/4;
+    grid-column: span 3;
+    
+    grid-row-start: 1;
+    grid-row-end: 4;
+    /*
+    grid-row: 1/4;
+    grid-row: span 4;
+    */
+    justify-self: center;
+    align-self: center;
+}
+.box-2{
+    border: solid 1px black;
+}
+.box-3{
+    border: solid 1px black;
+}
+.box-4{
+    border: solid 1px black;
+}
+    /*
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px; 
+
+    /*column-gap: 50px;
+    row-gap: 50px;*/
+    
+/*
+    grid-template-areas:
+                        "uno uno uno uno"
+                        "dos dos tres tres"
+                        "dos dos tres tres"; 
+
+    justify-content: start; 
+    align-content: flex-end;
+
+
+    justify-items: stretch; 
+    align-items: stretch;
+}
+
+.uno{
+    grid-area: uno;
+}
+.dos{
+    grid-area: dos;
+}
+.tres{
+    grid-area: tres;
+} 
+
+
+
+p{
+    background-color: darkred;
+    border: 2px solid black;
+    color: white;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+} 
+*/
